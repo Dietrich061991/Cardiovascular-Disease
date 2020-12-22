@@ -9,7 +9,6 @@ import os
 import plotly.express as px 
 import numpy as np
 import sklearn
-import webbrowser
 import cufflinks as cf
 import plotly.graph_objects as go
 cf.go_offline()
@@ -22,7 +21,7 @@ html_temp = """
 st.markdown(html_temp,unsafe_allow_html=True)
 st.text('Tags:|health, health conditions heart, conditions diseases|💼 Usability 10.0, License ⚖')
 #set image
-image1 = Image.open("/content/sample_data/Cardiovascularr.jpg")
+image1 = Image.open("/sample_data/Cardiovascularr.jpg")
 st.image(image1, caption='Cardiovascular Disease',use_column_width=True)
 
 #set image in sidebar
@@ -30,7 +29,7 @@ image = Image.open("/content/sample_data/Human-cardiovascular-system.jpg")
 st.sidebar.image(image, caption='Cardiovascular Disease',use_column_width=True)
 
 #print title
-st.sidebar.text('O objetivo deste documento é criar um modelo de machine learning que será capaz de prever doenças cardiovasculares com base em um conjunto de dados')
+st.sidebar.text('The purpose of this document is to create a machine learning model that will be able to predict cardiovascular disease based on a set of data')
 
 
 st.sidebar.markdown("""
@@ -76,7 +75,7 @@ st.sidebar.markdown("""
 
 def main():
   # acessando o diretorio para pegar o arquivo
-  def option_selected(folder_path="/content/sample_data/Cardio_vascular"):
+  def option_selected(folder_path="/Cardio_vascular"):
         filenames = os.listdir(folder_path)
         selected_filename = st.sidebar.selectbox("Select a file", filenames)
         return os.path.join(folder_path, selected_filename)
@@ -480,7 +479,7 @@ def main():
   """ ) 
   option_about = st.sidebar.selectbox("developer info",('No_select_info','Name', 'Linkedin','Github'))
   if option_about == ('Name'):
-    image_developer = Image.open("/content/sample_data/developer foto.jpg")
+    image_developer = Image.open("/sample_data/developer_app.jpg")
     st.sidebar.image(image_developer, caption='DIETRICH MONTCHO',use_column_width=True)
 
   elif option_about == ('Linkedin'):
@@ -490,45 +489,6 @@ def main():
   elif option_about == ('Github'):
     link_github = 'https://github.com/Dietrich061991'
     st.sidebar.markdown(link_github, unsafe_allow_html=True)
-
-    
-
-
-  
-
-
-
-
-   
-        
-      
-        
-
-      
-          
-    
-      
-      
-    
-  
-          
-
-  
-
-  
-  
-  
-  
-
-
-
-
-
-
-
- 
-
-
 
 
 if __name__ == '__main__':
