@@ -25,7 +25,7 @@ image1 = Image.open("Cardiovascularr.jpg")
 st.image(image1, caption='Cardiovascular Disease',use_column_width=True)
 
 #set image in sidebar
-image = Image.open("/content/sample_data/Human-cardiovascular-system.jpg")
+image = Image.open("Human-cardiovascular-system.jpg")
 st.sidebar.image(image, caption='Cardiovascular Disease',use_column_width=True)
 
 #print title
