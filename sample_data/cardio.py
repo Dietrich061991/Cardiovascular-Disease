@@ -473,7 +473,7 @@ def main():
   """ ) 
   option_about = st.sidebar.selectbox("developer info",('No_select_info','Name', 'Linkedin','Github'))
   if option_about == ('Name'):
-    image_developer = Image.open("/sample_data/developer_app.jpg")
+    image_developer = Image.open("developer_app.jpg")
     st.sidebar.image(image_developer, caption='DIETRICH MONTCHO',use_column_width=True)
 
   elif option_about == ('Linkedin'):
