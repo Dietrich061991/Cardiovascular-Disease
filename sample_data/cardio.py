@@ -74,14 +74,8 @@ st.sidebar.markdown("""
 """ )
 
 def main():
-  # acessando o diretorio para pegar o arquivo
-  def option_selected(folder_path="/Cardio_vascular"):
-        filenames = os.listdir(folder_path)
-        selected_filename = st.sidebar.selectbox("Select a file", filenames)
-        return os.path.join(folder_path, selected_filename)
-  filename = option_selected()
-  st.info("You Selected file {}".format(filename))
-  data = pd.read_csv(filename)
+
+  data = pd.read_csv("cardiovascular.csv")
 
   st.sidebar.text('Basic information')
   with st.sidebar.beta_expander('Select here',expanded=False):
