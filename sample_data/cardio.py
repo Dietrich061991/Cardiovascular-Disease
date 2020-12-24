@@ -21,7 +21,7 @@ html_temp = """
 st.markdown(html_temp,unsafe_allow_html=True)
 st.text('Tags:|health, health conditions heart, conditions diseases|💼 Usability 10.0, License ⚖')
 #set image
-image1 = Image.open("/sample_data/Cardiovascularr.jpg")
+image1 = Image.open("Cardiovascular-Disease/sample_data/Cardiovascularr.jpg")
 st.image(image1, caption='Cardiovascular Disease',use_column_width=True)
 
 #set image in sidebar
