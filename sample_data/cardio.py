@@ -291,7 +291,7 @@ def main():
 
   if select_grafic1 == 'Models to be tested':
     st.json({
-    'Modelos a serem testados': [
+    'Models to be tested': [
         'logistic regression',
         'Decison tree',
         'knn classification',
