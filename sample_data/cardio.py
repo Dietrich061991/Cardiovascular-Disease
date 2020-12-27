@@ -189,7 +189,7 @@ def main():
 
   if select_grafic == 'Profile Report of the Data':
     profile = ProfileReport(data)
-    st_profile_report(profile)
+    st_profile_report(profile.to_html)
     
   if select_grafic == 'bar chart':
       select_value = st.selectbox("select from the list one of the variables you want to view",('sbp', 'tobacco', 'ldl', 'adiposity','famhist', 'typea', 'obesity', 'alcohol','age','chd'))
