@@ -189,9 +189,9 @@ def main():
 
   if select_grafic == 'Profile Report of the Data':
     profile = ProfileReport(data)
-    st_profile_report(profile.to_html)
+    st_profile_report(profile)
     
-  if select_grafic == 'bar chart':
+  elif select_grafic == 'bar chart':
       select_value = st.selectbox("select from the list one of the variables you want to view",('sbp', 'tobacco', 'ldl', 'adiposity','famhist', 'typea', 'obesity', 'alcohol','age','chd'))
       if select_value == select_value: 
         fig1 = px.histogram(data, x=select_value)
