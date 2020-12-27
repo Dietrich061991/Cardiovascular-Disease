@@ -188,7 +188,7 @@ def main():
       ('No select','Profile Report of the Data','bar chart','Scatter chart','Violin plot'))
 
   if select_grafic == 'Profile Report of the Data':
-    profile = ProfileReport(data)
+    profile = ProfileReport.__init__(data)
     st_profile_report(profile)
     
   elif select_grafic == 'bar chart':
