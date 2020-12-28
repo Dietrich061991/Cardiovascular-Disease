@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from streamlit_pandas_profiling import st_profile_report
-from pandas_profiling import ProfileReport 
+#from streamlit_pandas_profiling import st_profile_report
+#from pandas_profiling import ProfileReport 
 import pandas as pd
 from PIL import Image
 import time  
@@ -185,7 +185,7 @@ def main():
 
   select_grafic = st.sidebar.radio(
       "",
-      ('No select','Profile Report of the Data','bar chart','Scatter chart','Violin plot'))
+      ('No select','bar chart','Scatter chart','Violin plot'))
 
   if select_grafic == 'Profile Report of the Data':
     profile = ProfileReport(data, html={'style':{'full_width':True}})
