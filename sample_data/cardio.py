@@ -18,7 +18,7 @@ cf.go_offline()
 html_temp = """
 <div style="background-color:Black; border:2px solid black;border - radius:20px"><p style="color:white;font-size:44px;padding:10px">heart attack by statistical learning</p></div>
 	"""
-st.markdown(html_temp,,unsafe_allow_html=True, layout='wide')
+st.markdown(html_temp,unsafe_allow_html=True, layout='wide')
 st.text('Tags:|health, health conditions heart, conditions diseases|💼 Usability 10.0, License ⚖')
 #set image
 image1 = Image.open("Cardiovascularr.jpg")
