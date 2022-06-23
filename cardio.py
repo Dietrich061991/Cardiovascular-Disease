@@ -14,6 +14,14 @@ import plotly.graph_objects as go
 cf.go_offline()
 
 
+icone = Image.open(r"C:\Users\sdietrich\Desktop\projeto painel\logo\icone.jpg")
+st.set_page_config(
+         page_title="Luiza Dashboad",
+         page_icon= icone,
+         layout="wide",
+         initial_sidebar_state="expanded",
+        )
+
 #template html
 html_temp = """
 <div style="background-color:Black; border:2px solid black;border - radius:20px"><p style="color:white;font-size:44px;padding:10px">heart attack by statistical learning</p></div>
