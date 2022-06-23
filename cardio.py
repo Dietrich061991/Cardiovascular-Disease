@@ -16,7 +16,7 @@ cf.go_offline()
 
 icone = Image.open("icone.jpg")
 st.set_page_config(
-         page_title="Luiza Dashboad",
+         page_title="ML Dash",
          page_icon= icone,
          layout="wide",
          initial_sidebar_state="expanded",
