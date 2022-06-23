@@ -14,7 +14,7 @@ import plotly.graph_objects as go
 cf.go_offline()
 
 
-icone = Image.open("icone.jpg")
+icone = Image.open("Icone.jpg")
 st.set_page_config(
          page_title="Luiza Dashboad",
          page_icon= icone,
