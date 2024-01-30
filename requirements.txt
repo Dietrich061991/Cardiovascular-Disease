@@ -1,6 +1,6 @@
 streamlit==1.11.1
 streamlit-pandas-profiling==0.0.6
-pandas-profiling==2.9.0
+pandas-profiling==3.6.6
 pandas==1.1.5
 image==1.5.33
 plotly==4.4.1
