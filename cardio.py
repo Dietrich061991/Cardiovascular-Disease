@@ -209,7 +209,7 @@ def main():
         
   elif select_grafic == ("Scatter chart"):
     
-      c1,c2 = st.beta_columns(2)
+      c1,c2 = st.columns(2)
         
 
       with c1:
@@ -232,7 +232,7 @@ def main():
 
       st.header("Data variables with the predictive variable'chd'")
 
-      c1,c2 = st.beta_columns(2)
+      c1,c2 = st.columns(2)
 
       with c1:
         with st.expander('X_label'):
@@ -257,7 +257,7 @@ def main():
 
   elif select_grafic == ("Violin plot"):
     
-      c1,c2 = st.beta_columns(2)
+      c1,c2 = st.columns(2)
 
       with c1:
         with st.expander('x_label'):
