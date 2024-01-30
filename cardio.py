@@ -213,14 +213,14 @@ def main():
         
 
       with c1:
-        with st.beta_expander('x_label'):
+        with st.expander('x_label'):
             #all_columns = new_data.columns.tolist()
           option_grafic3 = st.selectbox("select x_label from the list one of the variables you want to view",('','chd'))
           if option_grafic3 == option_grafic3:
             option_grafic3=option_grafic3
 
       with c2:
-        with st.beta_expander('y_label'):
+        with st.expander('y_label'):
           #all_columns = new_data.columns.tolist()
           option_grafic4 = st.selectbox("select y_label from the list one of the variables you want to view",('','sbp', 'tobacco',  'adiposity', 'typea', 'obesity', 'alcohol','age','ldl','famhist'))
           if option_grafic4 == option_grafic4:
@@ -235,13 +235,13 @@ def main():
       c1,c2 = st.beta_columns(2)
 
       with c1:
-        with st.beta_expander('X_label'):
+        with st.expander('X_label'):
           option_grafic7 = st.selectbox("select X_label from the list one of the variables you want to view",('','sbp', 'tobacco',  'adiposity', 'typea', 'obesity', 'alcohol','age','ldl','famhist'))
           if option_grafic7 == option_grafic7:
             option_grafic7=option_grafic7
 
       with c2:
-        with st.beta_expander('Y_label'):
+        with st.expander('Y_label'):
           option_grafic8 = st.selectbox("select Y_label from the list one of the variables you want to view",('','sbp', 'tobacco',  'adiposity', 'typea', 'obesity', 'alcohol','age','ldl','famhist'))
           if option_grafic8 == option_grafic8:
             option_grafic8=option_grafic8
@@ -260,14 +260,14 @@ def main():
       c1,c2 = st.beta_columns(2)
 
       with c1:
-        with st.beta_expander('x_label'):
+        with st.expander('x_label'):
           #all_columns = new_data.columns.tolist()
           option_grafic4 = st.selectbox("select x_label from the list one of the variables you want to view",('','chd'))
           if option_grafic4 == option_grafic4:
             option_grafic4=option_grafic4
 
       with c2:
-        with st.beta_expander('y_label'):
+        with st.expander('y_label'):
           #all_columns = new_data.columns.tolist()
           option_grafic5 = st.selectbox("select y_label from the list one of the variables you want to view",('','sbp', 'tobacco', 'ldl', 'adiposity', 'typea', 'obesity','famhist', 'alcohol','age'))
           if option_grafic5 == option_grafic5:
