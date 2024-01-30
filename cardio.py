@@ -86,7 +86,7 @@ def main():
   data = pd.read_csv("cardiovascular.csv")
 
   st.sidebar.text('Basic information')
-  with st.sidebar.beta_expander('Select here',expanded=False):
+  with st.sidebar.expander('Select here',expanded=False):
       # ler o arquivo
       if st.checkbox("Show the Dataset "):
         show_data = st.progress((0))
@@ -294,7 +294,7 @@ def main():
   x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size = 0.25)
 
   
-  with st.sidebar.beta_expander('Select here',expanded=False):
+  with st.sidebar.expander('Select here',expanded=False):
       select_grafic1 = st.radio("",('No select','Models to be tested','logistic regression','Decison tree','knn classification','support vector machine','Linear discirminant analysis','Quadratic discriminant analysis','Random forest classification','xgboost classification'))
 
   if select_grafic1 == 'Models to be tested':
