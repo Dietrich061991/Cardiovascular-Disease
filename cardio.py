@@ -152,7 +152,7 @@ def main():
   # radio
   genre = st.sidebar.radio(
      "",
-     ('No select','New Database', 'New Database type'))
+     ('No select','New Database')) #, 'New Database type'
   if genre == 'New Database':
     values = st.slider('Select the amount of line you want to view the data',0, 462)
     components.html("<p style ='color:blue;'>In this table we perform some manipulations and replace the unique values ​​that are in the column famhist with (Absent = 0 and Present = 1)'</p>")
