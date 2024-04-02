@@ -158,9 +158,9 @@ def main():
     components.html("<p style ='color:blue;'>In this table we perform some manipulations and replace the unique values ​​that are in the column famhist with (Absent = 0 and Present = 1)'</p>")
     st.write(new_data.head(values))
 
-  elif genre == 'New Database type':
-    new_data = new_data.astype('float')
-    st.table(new_data.dtypes)
+  #elif genre == 'New Database type':
+  # new_data = new_data.astype('float')
+  #  st.table(new_data.dtypes)
 
 
   st.sidebar.markdown("""
